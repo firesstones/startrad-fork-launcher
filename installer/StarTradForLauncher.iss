@@ -1,5 +1,5 @@
 #define AppName "StarTrad"
-#define AppVersion "1.0.0"
+#define AppVersion "1.0.1"
 #define AppPublisher "Circus"
 #define AppExeName "StarTrad.exe"
 #define SourceRoot ".."

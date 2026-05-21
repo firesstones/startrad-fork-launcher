@@ -39,8 +39,8 @@ if ($LASTEXITCODE -ne 0) {
 $manifest = @{
   id = "startrad"
   name = "StarTrad"
-  version = "1.0.0"
-  build = "launcher-fork-1"
+  version = "1.0.1"
+  build = "launcher-fork-2"
   executable = "StarTrad.exe"
 } | ConvertTo-Json -Depth 3
 
