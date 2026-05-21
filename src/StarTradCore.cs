@@ -43,7 +43,7 @@ namespace StarTradForLauncher
 
     internal static class StarTradCore
     {
-        public const string Version = "1.0.1";
+        public const string Version = "1.0.2";
 
         private const string TranslationHost = "https://traduction.circuspes.fr";
         private const string FrenchLanguageLine = "g_language = french_(france)";

@@ -191,15 +191,13 @@ namespace StarTradForLauncher
                 installList.Items.Add(item);
             }
 
-            foreach (LibraryCandidate library in lastDetection.Libraries)
+            foreach (LibraryCandidate library in lastDetection.Libraries.Where(l => l.Valid))
             {
                 ListViewItem item = new ListViewItem(library.PathValue);
                 item.SubItems.Add(library.Source ?? "");
-                item.SubItems.Add(library.Valid ? "OK" : "Ignoree");
+                item.SubItems.Add("OK");
                 item.Tag = library;
-                item.ForeColor = library.Valid
-                    ? Color.FromArgb(147, 230, 170)
-                    : Color.FromArgb(165, 155, 130);
+                item.ForeColor = Color.FromArgb(147, 230, 170);
                 libraryList.Items.Add(item);
             }
         }
